@@ -8,6 +8,7 @@ html {
 
 body {
 	width: 100%;
+	height: 100%;
 	margin: 0;
     padding: 0;
 	
@@ -57,13 +58,14 @@ a{
 }
 
 #container{
-	
+	display: block;
 }
 
 #content{
 	margin-top: 15em;
 	
 	width: 100%;
+	height: 300%;
 	
 	display: flex;
 	flex-direction: column;
@@ -94,7 +96,7 @@ a{
 	width: 100%;
 	height: 2.5em;
 	margin-top: 2.5em;
-
+	
 	text-align: center;
 	justify-content: center;
 	
@@ -228,6 +230,52 @@ a{
 	padding-bottom: 3%;
 	
 	margin-left: 2.5%;
+}
+
+.outline_button{
+	border: 1px solid white;
+	height: 3em;
+	width: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	
+	color: white;
+	background-color: transparent;
+}
+
+.outline_button:active{
+	opacity: 0.8;
+}
+
+#newObjContainter{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+.removable_element{
+	width: 10em;
+	height: 10em;
+	background-color: black;
+	
+	margin-left: 1em;
+	margin-top: 1em;
+	float: left;
+}
+
+.exit_button{
+	width: 2em;
+	height: 2em;
+	
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	
+	color: black;
+	background-color: transparent;
 }
 
 /* Photos autors:
