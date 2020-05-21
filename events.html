@@ -31,7 +31,7 @@
 						<p><a href="video.html">FILMY</a></p>
 					</div>
 					<div class="button" style="opacity: 0.6;">
-						<p><a href="events.html">EVENTY</a></p>
+						<p><a href="events.html">To-Do</a></p>
 					</div>
 					<div class="button">
 						<p><a href="contact.html">KONTAKT</a></p>
@@ -45,16 +45,36 @@
 			<div id="content">
 				<div class="header">
 					<span style="font-size: 2em">
-						ZRÓB COŚ !
+						Lista rzeczy do skończenia:
 					</span>
 				</div>
 				
+				<textarea class="todo_input_text_field" rows="3" cols="20" maxlength="200">
+					
+				</textarea>
+				
 				<button class="button outline_button" onclick="AddNewElement()">
-						<span>DODAJ COŚ</span>
+						<span>DODAJ</span>
 				</button>
 					
 				<div id="newObjContainter">
-					
+					<div class="row">
+						<div class="row_field">
+							ID
+						</div>
+						<div class="row_field">
+							Przypisane do
+						</div>
+						<div class="row_field">
+							Opis
+						</div>
+						<div class="row_field">
+							Zakończone
+						</div>
+						<div class="row_field">
+							Edytuj / Usuń
+						</div>
+					</div>
 				</div>
 			</div>
 
