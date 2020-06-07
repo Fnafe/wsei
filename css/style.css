@@ -16,6 +16,16 @@ body {
 	background-size: cover;
 }
 
+@keyframes enter {
+    from { transform: translate(10%); opacity: 0;}
+    to   { transform: translate(0%); opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 /* Remove decoration from the link */
 a{
 	text-decoration: none;
@@ -85,6 +95,8 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
+	
+	animation: enter 1s;
 }
 
 #footer{
@@ -151,6 +163,12 @@ a{
 	
 	display: flex;
 	flex-direction: row;
+	
+	opacity: 0;
+
+	animation: enter 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
 }
 
 .text_container{
@@ -173,6 +191,12 @@ a{
 	margin-bottom: 5%;
 	
 	font-family: 'Anton', sans-serif;
+	
+	opacity: 0;
+
+	animation: enter 1s;
+	animation-delay: 0.8s;
+	animation-fill-mode: forwards;
 }
 
 .title_image img{
@@ -180,6 +204,12 @@ a{
 	height: 1.9em;
 	
 	margin-left: -1em;
+	
+	opacity: 0;
+
+	animation: enter 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
 }
 
 .text_middle{
@@ -187,6 +217,8 @@ a{
 	
 	margin-top: 15%;
 	margin-bottom: 15%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	
 	font-size: 2em;
 	font-weight: bold;
@@ -194,6 +226,8 @@ a{
 	text-align: center;
 	justify-content: center;
 	z-index: 1;
+	
+	background-color: rgba(0, 0, 0, 0.6);
 	
 	position: static;
 }
