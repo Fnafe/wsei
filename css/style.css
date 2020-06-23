@@ -16,6 +16,11 @@ body {
 	background-size: cover;
 }
 
+@keyframes enter_top {
+    from { transform: translate(0, -20%); opacity: 0;}
+    to   { transform: translate(0, 0%); opacity: 1; }
+}
+
 @keyframes enter {
     from { transform: translate(10%); opacity: 0;}
     to   { transform: translate(0%); opacity: 1; }
@@ -84,7 +89,7 @@ a{
 	margin-top: 2em;
 	
 	font-size: 1em;
-
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -97,6 +102,14 @@ a{
 	left: 0;
 	
 	animation: enter 1s;
+}
+
+#hamburger_icon, #mobile_menu{
+	visibility: hidden;
+}
+
+.animate_top_enter{
+		animation: enter_top 1s;
 }
 
 #footer{
@@ -369,12 +382,6 @@ a{
 		6. Remove task - button
 */
 
-/*
-.row_field:nth-child(3){
-	width: 40%;
-}
-*/
-
 .row_field:nth-child(even){
 	background-color: rgb(0, 0, 0, 0.9);
 }
@@ -383,10 +390,45 @@ a{
 	background-color: rgb(0, 0, 0, 0.2);
 }
 
+@media only screen and (max-width: 640px){
+	#navbar{
+		visibility: hidden;
+	}
+	
+	#hamburger_icon{
+		visibility: visible;
+		font-size: 4em;
+	}
+	
+	#hamburger_icon i {
+		background-color: rgb(0,0,0, 0.5);
+	}
+	
+	#mobile_menu{
+		visibility: visible;
+		
+		width: 100%;
+		font-size: 2em;
+		
+		background-color: rgb(0, 0 ,0 , 0.2);
+	}
+	
+	#content{
+		margin-top: 0;
+	}
+	
+	#newObjContainter{
+		width: 90%;
+	}
+	
+	#todo_input_text_field{
+		width: 80%;
+	}
+}
+
 
 /* Photos autors:
 - Background by Kyle Loftus from Pexels
-
 */
 
 

@@ -26,6 +26,7 @@ function AddNewElement(){
 	objContainer.appendChild(rowTemplate.cloneNode(true));
 }
 
+// Marks task in the row as finished
 function OnFinishTaskClick(id){
 	selectedRow = document.getElementById(id);
 	var finishedIcon = selectedRow.querySelector(".icon-hourglass");
@@ -33,12 +34,15 @@ function OnFinishTaskClick(id){
 	finishedIcon.style.color = "#66ff66";
 }
 
-// invoked when user presses delete button on the row
+// Invoked when user presses delete button on the row
+// Removes the row
 function OnRemoveRowClick(id){
 	var removedRow = document.getElementById(id);
 	objContainer.removeChild(removedRow);
 }
 
+// Invoked when user presses edit button on the row
+// Edits description of the row
 function OnEditRowClick(id){
 	var editedRow = document.getElementById(id);
 	editedRow.querySelector("#description").innerHTML = inputField.value;
