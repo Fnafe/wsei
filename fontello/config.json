@@ -1,0 +1,60 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "a42f298da5c64e646a5d532724cd6e15",
+      "css": "home-outline",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "f48ae54adfb27d8ada53d0fd9e34ee10",
+      "css": "trash-empty",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d35a1d35efeb784d1dc9ac18b9b6c2b6",
+      "css": "pencil",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "12f4ece88e46abd864e40b35e05b11cd",
+      "css": "ok",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ad33e708f4d2e25c5056c931da1528d6",
+      "css": "ok-circled2",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "35ce53990ec0892d7dcea2d0159f8dca",
+      "css": "hourglass",
+      "code": 59397,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "ba8fd15d9b9dc09740338532909fd0e2",
+      "css": "home",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M888 514Q904 530 899 541T872 552L788 552 788 862Q788 876 787 883T779 896 756 902L552 902 552 592 348 592 348 902 154 902Q126 902 119 892T112 862L112 552 28 552Q6 552 1 541T12 514L412 112Q428 96 450 96T488 112Z",
+        "width": 900
+      },
+      "search": [
+        "home"
+      ]
+    }
+  ]
+}

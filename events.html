@@ -8,8 +8,7 @@
         <title>Project wsei</title>
 		
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
-		
-		<script src="js/events.js"></script>
+        <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css"/>
     </head>
     <body>
         <div id="container">
@@ -49,29 +48,27 @@
 					</span>
 				</div>
 				
-				<textarea class="todo_input_text_field" rows="3" cols="20" maxlength="200">
-					
-				</textarea>
+				<textarea id="todo_input_text_field" rows="3" cols="20" maxlength="200" placeholder="Nowe zadanie.."></textarea>
 				
 				<button class="button outline_button" onclick="AddNewElement()">
 						<span>DODAJ</span>
 				</button>
 					
 				<div id="newObjContainter">
-					<div class="row">
-						<div class="row_field">
+					<div class="row" id="first_row">
+						<div class="row_field" id="row_id">
 							ID
 						</div>
-						<div class="row_field">
+						<div class="row_field" id="assignee">
 							Przypisane do
 						</div>
-						<div class="row_field">
+						<div class="row_field" id="description">
 							Opis
 						</div>
-						<div class="row_field">
+						<div class="row_field" id="finished">
 							Zakończone
 						</div>
-						<div class="row_field">
+						<div class="row_field" id="edit_remove">
 							Edytuj / Usuń
 						</div>
 					</div>
@@ -79,6 +76,7 @@
 			</div>
 
 		</div>	
+		<script src="js/events.js"></script>
 </html>
 
 
