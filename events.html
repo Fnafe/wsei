@@ -68,6 +68,12 @@
 					<span style="font-size: 2em">
 						Lista rzeczy do skończenia:
 					</span>
+					<br>
+					<span style="font-size: 0.5em">
+						Usunięcie zadania - kliknij: <i class="icon-trash-empty"  style="color: #cc0000"></></i> <br>
+						Zakończ zadanie - kliknij: <i class="icon-hourglass" style="color: #ffcc00"></i> <br>
+						Edycja zadania - wprowadź nową wartość w głównym polu i kliknij: <i class="icon-pencil"></i> <br>
+					</span>
 				</div>
 				
 				<textarea id="todo_input_text_field" rows="3" cols="20" maxlength="200" placeholder="Nowe zadanie.."></textarea>
@@ -82,16 +88,33 @@
 							ID
 						</div>
 						<div class="row_field" id="assignee">
-							Przypisane do
+						<i class="icon-user"> </i>
+							<span class="big_screen_only">
+								Przypisane do
+							</span>
 						</div>
 						<div class="row_field" id="description">
-							Opis
+						<i class="icon-doc-text"> </i>
+							<span class="big_screen_only">
+								Opis
+							</span>
 						</div>
 						<div class="row_field" id="finished">
-							Zakończone
+						<i class="icon-ok-circled2"> </i>
+							<span class="big_screen_only">
+								Zakończone
+							</span>
 						</div>
 						<div class="row_field" id="edit_remove">
-							Edytuj / Usuń
+							<i class="icon-pencil"> </i>
+							<span class="big_screen_only">
+								Edytuj
+							</span>
+							/
+							<i class="icon-trash-empty"> </i>
+							<span class="big_screen_only">
+								Usuń
+							</span>
 						</div>
 					</div>
 				</div>

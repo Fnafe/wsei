@@ -49,6 +49,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5408be43f7c42bccee419c6be53fdef5",
+      "css": "doc-text",
+      "code": 61686,
+      "src": "fontawesome"
+    },
+    {
       "uid": "ba8fd15d9b9dc09740338532909fd0e2",
       "css": "home",
       "code": 59392,

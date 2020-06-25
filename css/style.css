@@ -362,10 +362,10 @@ a{
 	width: 15%;
 }
 #description{
-	width: 55%;
+	width: 50%;
 }
 #finished{
-	width: 10%;
+	width: 15%;
 }
 #edit_remove{
 	width: 15%;
@@ -388,6 +388,18 @@ a{
 
 .row_field:nth-child(odd){
 	background-color: rgb(0, 0, 0, 0.2);
+}
+
+.mobile_only{
+		display: none;
+}
+
+.big_screen_only{
+		display: initial;
+}
+
+.hover_bump:hover{
+	transform: scale(1.5);
 }
 
 @media only screen and (max-width: 640px){
@@ -423,6 +435,14 @@ a{
 	
 	#todo_input_text_field{
 		width: 80%;
+	}
+	
+	.mobile_only{
+		display: initial;
+	}
+	
+	.big_screen_only{
+		display: none;
 	}
 }
 
