@@ -48,9 +48,8 @@ a{
 }
 */
 
-/* Index page text */
+/* Index page text color: #0f1a1a;*/
 #index_text{
-	color: #0f1a1a;
 	color: #ffbb00;
 
 	border-bottom: 1px none black;
@@ -140,15 +139,16 @@ a{
 	height: 100%;
 	
 	font-size: 1.3em;
-	
 	text-align: center;
-	
 	font-weight: bold;
+	
+	display: flex;
+	align-items:center;
 	
 	box-sizing: border-box;
 }
 
-.button p a{
+.button span a{
 	 border-bottom: 1px none black;
 	 
 	-webkit-transition: all 400ms ease;
@@ -158,7 +158,7 @@ a{
     transition: all 400ms ease;
 }
 
-.button:hover p a{
+.button:hover span a{
 	border-bottom: 1.1px solid white;
 }
 
@@ -250,6 +250,14 @@ a{
 	max-height: 95%;
 }
 
+.rotate_on_hover{
+	transition-duration: 1.5s;
+}
+
+.rotate_on_hover:hover{
+	transform: rotate3d(2, 3, 1, 80deg);
+}
+
 .text_middle_background{
 	width: 100%;
 	height: 20%;
@@ -283,6 +291,8 @@ a{
 	
 	color: white;
 	background-color: transparent;
+	
+	display: block;
 }
 
 .outline_button:active{
@@ -370,7 +380,6 @@ a{
 #edit_remove{
 	width: 15%;
 }
-
 
 /* 
 	To-Do list architecture: 

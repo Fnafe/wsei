@@ -8,6 +8,7 @@
         <title>Project wsei</title>
 		
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="fontello/css/fontello.css" type="text/css"/>
     </head>
     <body>
         <div id="container">
@@ -16,29 +17,55 @@
 				<img src="assets/top_right_icon.png" />
 			</div>
 			-->
-		
+			
 			<div id="navbar">
 					<div class="square_icon">
 						<img src="assets/svg/rightBottomSmallSquare.svg" />
 					</div>
 					
-					<div class="button">		
-						<p><a href="index.html" id="index_text">STRONA GŁÓWNA</a></p>	
+					<div class="button">
+						<i class="icon-home" style="color: #ffbb00">&ensp;</i>
+						<span><a href="index.html" id="index_text">STRONA GŁÓWNA</a></span>	
 					</div>
 					<div class="button">
-						<p><a href="video.html ">FILMY</a></p>
+						<i class="icon-video">&ensp;</i>
+						<span><a href="video.html">FILMY</a></span>
 					</div>
 					<div class="button">
-						<p><a href="events.html">To-Do</a></p>
+						<i class="icon-doc-text">&ensp;</i>
+						<span><a href="events.html">To-Do</a></span>
 					</div>
 					<div class="button" style="opacity: 0.6;">
-						<p><a href="contact.html">KONTAKT</a></p>
+						<i class="icon-mail">&ensp;</i>
+						<span><a>KONTAKT</a></span>
 					</div>
 					
 					<div class="square_icon">
 						<img src="assets/svg/leftBottomTriangle.svg" />
 					</div>
 			</div>
+			
+			<div id="hamburger_icon">
+				<i class="icon-menu" onclick="ShowMobileMenu()"></i>
+			</div>
+			
+			<div id="mobile_menu">
+			<div id="mobile_menu_buttons">
+				<div class="button" style="opacity: 0.6;">		
+					<p><a href="index.html" id="index_text">STRONA GŁÓWNA</a></p>	
+				</div>
+				<div class="button">
+					<p><a href="video.html">FILMY</a></p>
+				</div>
+				<div class="button">
+					<p><a href="events.html">To-Do</a></p>
+				</div>
+				<div class="button" style="opacity: 0.6;">
+					<p><a>KONTAKT</a></p>
+				</div>
+			</div>
+			</div>
+			
 			
 			<div id="content">
 				<div class="header">
